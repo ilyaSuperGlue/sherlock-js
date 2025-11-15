@@ -1,8 +1,10 @@
+## welcome to sherlock-js
+
 <p align=center>
   <br>
   <a href="https://sherlock-project.github.io/" target="_blank"><img src="docs/images/sherlock-logo.png"/></a>
   <br>
-  <span>Hunt down social media accounts by username across <a href="https://sherlockproject.xyz/sites">500+ social networks</a></span>
+  <span>You can search social media accounts by username across <a href="https://sherlockproject.xyz/sites">500+ social networks</a></span>
   <br>
 </p>
 
@@ -21,7 +23,7 @@ A TypeScript rewrite of the original [Sherlock](https://github.com/sherlock-proj
 ## Features
 
 - Flexible Filtering: Filter by content type (SFW/NSFW) or specific sites using whitelists and blacklists
-- Smart Detection: Detects claimed accounts, available usernames, WAF blocks, and invalid usernames
+- Detects claimed accounts, available usernames, WAF blocks, and invalid usernames
 - Real-time Callbacks: Get results as they arrive with callback support
 - Zero Dependencies: Lightweight standalone library
 - Full TypeScript Support: Complete type safety
@@ -283,6 +285,6 @@ MIT © 2024
 
 ## Contributing
 
-Contributions are welcome! Feel free to submit issues and pull requests to help improve Sherlock.
+Contributions are welcome! Feel free to submit issues and pull requests to help improve Sherlock-JS.
 
 ---
