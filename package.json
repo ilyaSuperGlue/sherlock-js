@@ -41,5 +41,10 @@
     "registry": "https://registry.npmjs.org/",
     "access": "public"
   },
-  "packageManager": "bun@1.3.2"
+  "packageManager": "bun@1.3.2",
+  "files": [
+    "dist/",
+    "README.md",
+    "LICENSE"
+  ]
 }
