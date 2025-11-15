@@ -1,5 +1,5 @@
 import { generateUserAgent, interpolate_string } from "../index";
-import type { TSite } from "../../interfaces/sites";
+import type { TSite } from "../../interfaces/sites.ts";
 
 interface TCurl extends TSite {
   username: string;

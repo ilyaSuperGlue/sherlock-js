@@ -14,8 +14,8 @@
   "module": "dist/index.js",
   "scripts": {
     "start": "bun run src/index.ts",
-    "build": "bunx tsc",
-    "build:bundle": "bun build src/index.ts --outdir dist"
+    "build": "bun build src/index.ts --outdir dist --target node --format esm",
+    "build:bundle": "bun run build && bunx tsc --emitDeclarationOnly"
   },
   "devDependencies": {
     "@types/bun": "latest",

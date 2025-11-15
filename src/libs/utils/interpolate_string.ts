@@ -1,4 +1,4 @@
-import type { TCommonUrlUsername } from "../../interfaces/types";
+import type { TCommonUrlUsername } from "../../interfaces/types.ts";
 
 const interpolate_string = ({
   url,
