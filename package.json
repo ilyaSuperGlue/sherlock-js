@@ -1,24 +1,29 @@
 {
   "name": "@ilyasuperglue/sherlock-js",
-  "module": "src/index.ts",
+  "version": "0.0.1",
+  "description": "a library for running sherlock on JS env",
+  "type": "module",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
-  "description": "a library for running sherlock on JS env",
-  "version": "0.0.1",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "module": "dist/index.js",
+  "scripts": {
+    "start": "bun run src/index.ts",
+    "build": "bunx tsc",
+    "build:bundle": "bun build src/index.ts --outdir dist"
+  },
   "devDependencies": {
-    "@types/bun": "latest"
+    "@types/bun": "latest",
+    "typescript": "^5.9.3"
   },
   "peerDependencies": {
     "typescript": "^5.9.3"
   },
-  "private": false,
-  "scripts": {
-    "start": "bun run src/index.ts",
-    "build": "bun build src/index.ts --outdir dist --target node",
-    "types": "bunx tsc",
-    "build:all": "bun run build && bun run types"
-  },
-  "type": "module",
   "keywords": [
     "sherlock",
     "javascript",
@@ -31,6 +36,7 @@
   "author": "ilyas <ilyasabdurahmanyusuf@gmail.com> (https://github.com/hikaaam)",
   "license": "MIT",
   "homepage": "https://github.com/ilyaSuperGlue/sherlock-js#readme",
+  "private": false,
   "publishConfig": {
     "registry": "https://registry.npmjs.org/",
     "access": "public"

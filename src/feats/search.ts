@@ -1,4 +1,4 @@
-import { _sites } from "@resources";
+import { _sites } from "../resources";
 import type { FormatedResponse } from "../interfaces/types";
 import type { TSiteKey } from "../interfaces/sites";
 import singular_search from "./singular_search";

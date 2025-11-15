@@ -1,5 +1,5 @@
 import type { SHERLOCK_STATUS } from "../../interfaces/types";
-import { clouflare_detection } from "@libs";
+import { clouflare_detection } from "../../libs";
 
 const status_code_detection = async (
   res: Response

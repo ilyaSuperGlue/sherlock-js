@@ -1,5 +1,5 @@
-import { search as sherlock, singular_search } from "@feats";
-import { _sites } from "@resources";
+import { search as sherlock, singular_search } from "./feats";
+import { _sites } from "./resources";
 import { type SHERLOCK_STATUS } from "./interfaces/types";
 import { type TSite, type TSiteKey, type TSites } from "./interfaces/sites";
 

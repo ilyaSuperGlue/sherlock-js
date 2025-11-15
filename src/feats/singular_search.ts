@@ -4,7 +4,7 @@ import {
   status_code_detection,
   message_detection,
   interpolate_string,
-} from "@libs";
+} from "../libs";
 import { _sites } from "../resources";
 import type { TSite } from "../interfaces/sites";
 import type { FormatedResponse } from "../interfaces/types";

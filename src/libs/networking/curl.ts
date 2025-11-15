@@ -1,4 +1,4 @@
-import { generateUserAgent, interpolate_string } from "@libs";
+import { generateUserAgent, interpolate_string } from "../index";
 import type { TSite } from "../../interfaces/sites";
 
 interface TCurl extends TSite {

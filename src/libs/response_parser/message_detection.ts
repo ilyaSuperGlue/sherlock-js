@@ -1,7 +1,6 @@
-import { write } from "bun";
 import type { TSite } from "../../interfaces/sites";
 import type { SHERLOCK_STATUS } from "../../interfaces/types";
-import { clouflare_detection } from "@libs";
+import { clouflare_detection } from "../../libs";
 
 interface TMessageDetection {
   response: Response;
