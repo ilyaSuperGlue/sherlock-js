@@ -37,7 +37,7 @@ const search = async ({
   callback_each,
   timeout_each = 3000,
   timeout,
-}: TSherlockParams) => {
+}: TSherlockParams): Promise<FormatedResponse[]> => {
   const searchController = new AbortController();
   const responses: FormatedResponse[] = [];
   try {

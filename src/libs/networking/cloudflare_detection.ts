@@ -19,7 +19,7 @@ const clouflare_detection = async ({
   res?: Response;
   errorType: TSite["errorType"];
   resText?: string;
-}) => {
+}): Promise<boolean> => {
   if (errorType === "message" && resText) {
     return WAFHitMsgs.some((it) => resText.includes(it));
   }

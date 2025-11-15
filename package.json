@@ -1,6 +1,9 @@
 {
   "name": "@ilyasuperglue/sherlock-js",
   "module": "src/index.ts",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "description": "a library for running sherlock on JS env",
   "version": "0.0.1",
   "devDependencies": {
     "@types/bun": "latest"
@@ -10,7 +13,10 @@
   },
   "private": false,
   "scripts": {
-    "start": "bun run src/index.ts"
+    "start": "bun run src/index.ts",
+    "build": "bun build src/index.ts --outdir dist --target node",
+    "types": "bunx tsc",
+    "build:all": "bun run build && bun run types"
   },
   "type": "module",
   "keywords": [

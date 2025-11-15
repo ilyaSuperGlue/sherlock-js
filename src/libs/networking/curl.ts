@@ -7,7 +7,7 @@ interface TCurl extends TSite {
   abortSignal?: AbortController;
 }
 
-const curl = async (params: TCurl) => {
+const curl = async (params: TCurl): Promise<Response> => {
   const controller = new AbortController();
   const url = interpolate_string(params);
   const method = params.request_method ?? "GET";
