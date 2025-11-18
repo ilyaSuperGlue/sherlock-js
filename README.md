@@ -270,8 +270,10 @@ console.log(`Errors on ${errors.length} sites`);
 
 ## Limitations
 
+- Web browser not supported due to CORS issue
 - Some sites may block automated requests (WAF status)
 - Rate limiting on some sites may cause UNKNOWN status
+- Proxy fetching not implemented yet
 - Multi threading not implemented yet
 
 ## License
