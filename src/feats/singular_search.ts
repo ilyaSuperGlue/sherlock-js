@@ -29,6 +29,7 @@ const singular_search = async ({
   abortSignal,
 }: TSingularSearch): Promise<FormatedResponse> => {
   const url = interpolate_string({ username, ...site });
+  const user_friendly_url = interpolate_string({ username, url: site.url });
   const timestamp = Date.now();
 
   try {
@@ -57,7 +58,7 @@ const singular_search = async ({
       });
       return {
         status,
-        url,
+        url: user_friendly_url,
         isNSFW: site.isNSFW ?? false,
         time: Date.now() - timestamp,
       };
@@ -65,14 +66,14 @@ const singular_search = async ({
     const { status } = await status_code_detection(response);
     return {
       status,
-      url,
+      url: user_friendly_url,
       isNSFW: site.isNSFW ?? false,
       time: Date.now() - timestamp,
     };
   } catch (error) {
     return {
       status: "UNKNOWN",
-      url,
+      url: user_friendly_url,
       isNSFW: site.isNSFW ?? false,
       time: Date.now() - timestamp,
     };
