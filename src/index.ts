@@ -1,6 +1,9 @@
 import { search as sherlock, singular_search } from "./feats/index";
 import { _sites } from "./resources/index";
-import { type SHERLOCK_STATUS } from "./interfaces/types";
+import {
+  type SHERLOCK_STATUS,
+  type FormatedResponse,
+} from "./interfaces/types";
 import { type TSite, type TSiteKey, type TSites } from "./interfaces/sites";
 
 export {
@@ -10,6 +13,7 @@ export {
   type TSite,
   type TSiteKey,
   type TSites,
+  type FormatedResponse,
 };
 
 export default sherlock;

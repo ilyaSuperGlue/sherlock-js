@@ -41,7 +41,7 @@ pnpm add @ilyasuperglue/sherlock-js
 ## Quick Start
 
 ```typescript
-import sherlock, { singularSearch, sites } from "sherlock";
+import sherlock, { singularSearch, sites } from "@ilyasuperglue/sherlock-js";
 
 // Search across all SFW sites
 const results = await sherlock({
@@ -120,7 +120,7 @@ Promise<FormatedResponse>;
 **Example:**
 
 ```typescript
-import { singularSearch, sites } from "sherlock";
+import { singularSearch, sites } from "@ilyasuperglue/sherlock-js";
 
 const result = await singularSearch({
   username: "john_doe",
