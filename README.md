@@ -46,6 +46,10 @@ import sherlock, { singularSearch, sites } from "@ilyasuperglue/sherlock-js";
 // Search across all SFW sites
 const results = await sherlock({
   username: "fufufafa",
+  timeout_each: 1000,
+  callback_each: (result) => {
+    console.log(`Found: ${result.url} | status: ${result.status}`);
+  },
 });
 
 console.log(results);
@@ -267,6 +271,10 @@ console.log(`Found on ${claimed.length} sites`);
 console.log(`Available on ${available.length} sites`);
 console.log(`Errors on ${errors.length} sites`);
 ```
+
+## Demo app
+
+https://ilyasuperglue.github.io/demo/sherlock-js
 
 ## Limitations
 
